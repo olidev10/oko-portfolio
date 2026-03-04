@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(222 84% 4.9%);
+
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222 84% 4.9%);
+
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(222 84% 4.9%);
+
+    --primary: hsl(210 80% 50%);
+    --primary-foreground: hsl(0 0% 98%);
+
+    --secondary: hsl(210 40% 96%);
+    --secondary-foreground: hsl(222 84% 4.9%);
+
+    --muted: hsl(210 40% 96%);
+    --muted-foreground: hsl(215 16% 47%);
+
+    --accent: hsl(210 80% 45%);
+    --accent-foreground: hsl(0 0% 98%);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 98%);
+
+    --border: hsl(214 32% 91%);
+    --input: hsl(214 32% 91%);
+    --ring: hsl(210 80% 50%);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: hsl(222 84% 4.9%);
+    --foreground: hsl(210 40% 98%);
+
+    --card: hsl(222 84% 4.9%);
+    --card-foreground: hsl(210 40% 98%);
+
+    --popover: hsl(222 84% 4.9%);
+    --popover-foreground: hsl(210 40% 98%);
+
+    --primary: hsl(210 80% 55%);
+    --primary-foreground: hsl(222 84% 4.9%);
+
+    --secondary: hsl(217 33% 17%);
+    --secondary-foreground: hsl(210 40% 98%);
+
+    --muted: hsl(217 33% 17%);
+    --muted-foreground: hsl(215 20% 65%);
+
+    --accent: hsl(210 70% 40%);
+    --accent-foreground: hsl(210 40% 98%);
+
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(210 40% 98%);
+
+    --border: hsl(217 33% 17%);
+    --input: hsl(217 33% 17%);
+    --ring: hsl(210 80% 55%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* sky gradient to use CSS custom properties for consistency */
+.bg-sky-gradient {
+  background: linear-gradient(to bottom, hsl(222 84% 4.9%), hsl(197, 76%, 15%), hsl(182, 76%, 25%));
+}
+/* Enhanced scrollbar with emerald theme colors */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
