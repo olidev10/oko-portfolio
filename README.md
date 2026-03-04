@@ -57,6 +57,10 @@ B4A_APP_ID=
 B4A_REST_KEY=
 B4A_SERVER_URL=https://parseapi.back4app.com
 
+
+For admin side to update add projects
+you'll need Parse to identify with Back4app and Cloudinary to store your project Thumbnail
+
 # Parse client SDK
 NEXT_PUBLIC_PARSE_APP_ID=
 NEXT_PUBLIC_PARSE_JS_KEY=
